@@ -2,6 +2,7 @@
 *.iml
 .env
 /node_modules/
+/public/main.js
 
 # Created by https://www.gitignore.io/api/ruby
 # Edit at https://www.gitignore.io/?templates=ruby
