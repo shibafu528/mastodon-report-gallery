@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3,
+    "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+    "メイリオ", Meiryo,
+    Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    "Helvetica Neue", HelveticaNeue,
+    Helvetica,
+    Arial,
+    "Segoe UI",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background: #263238;
+  color: #fff;
+  padding: 0.25rem 1rem;
+}
+
+.report {
+  border: 1px solid #78909C;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background: #37474F;
+}
+
+.report:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.report__reporter {}
+
+.report__comment {
+  position: relative;
+  border: 1px solid #78909C;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.7rem 0;
+  background: #455A64;
+}
+
+.report__comment::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border: 10px solid #78909C;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.report__comment::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  border: 10px solid #455A64;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.report__triangle {
+  width: 16px;
+  height: 16px;
+  margin-top: 0.25rem;
+  margin-bottom: calc(0.25rem - 16px);
+  margin-left: 5rem;
+  border: 16px solid #78909C;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.report__status {
+  border: 1px solid #78909C;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background: #455A64;
+}
